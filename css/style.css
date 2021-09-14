@@ -1,0 +1,175 @@
+body {
+    background-color: #EFF0F3!important
+}
+
+a:hover{
+    text-decoration: none;
+}
+button:focus, div:focus{
+    outline: none;
+}
+
+h1{
+  padding-left: 10%;
+  font-weight: 600;
+}
+
+#btn_back{
+  position: relative;
+  bottom: 15px;
+}
+
+
+.sort-form{
+  display: flex;
+  margin-bottom: 5px;
+}
+#rating_amount{
+  width: 290px;
+  margin-right: 10px;
+}
+#genre_sort{
+  width: 290px;
+  margin-right: 10px;
+}
+#rating_sort{
+  width: 290px;
+}
+
+.form-control{
+    width: 69%;
+}
+
+button, input{
+    margin-bottom: 5px;
+}
+
+.btn-success{
+    margin-left: 10px;
+    background-color: #2067ff;
+    border-color: #0044ff;
+    border-radius: 8px;
+}
+.btn:hover{
+    background-color: #003e9b;
+    border-color: #0400ff;
+    box-shadow: 0 0 5px rgba(2, 0, 122, 0.5);
+    transition-duration: .4s;
+}
+
+.sort_text{
+  width: 65%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+ul{
+  padding-left: 0;
+}
+ul li {
+    list-style: none;
+    padding: 8px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    background: #fcfcfc;
+    border: 1px solid silver;
+    border-radius: 10px;
+    width: 69%;
+  }
+ul li:hover {
+    background: #f1f1f1;
+    transition-duration: .3s;
+}
+
+ul li a {
+  font-weight: 600;
+}
+ul li button {
+    border: 0;
+    padding: 5px 10px;
+    color: white;
+    background: #f04040;
+    position: relative;
+    border-radius: 8px;
+}
+ul li b {
+  padding-left: 10px;
+}
+ul li button:hover {
+    background: #a12929;
+    transition-duration: .3s;
+}
+
+.fa-star{
+  color: rgb(255, 255, 0);
+  text-shadow: rgb(0, 0, 0) 1px 1px 0, rgb(0, 0, 0) -1px -1px 0, 
+  rgb(0, 0, 0) -1px 1px 0, rgb(0, 0, 0) 1px -1px 0;
+}
+
+.checkbox_{
+    margin: 10px 0 10px 0;
+}
+.checkbox_ form{
+  display: inline-block;
+}
+
+
+
+
+
+.custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  /* для элемента label связанного с .custom-radio */
+  .custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  .custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+  }
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+  /* стили для радиокнопки, находящейся в фокусе */
+  .custom-radio:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .custom-radio:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+  }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  }
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+  .custom-radio:disabled+label::before {
+    background-color: #e9ecef;
+  }
+
+  
